@@ -1,0 +1,33 @@
+{
+  "name": "german-federal-states",
+  "version": "0.0.1",
+  "description": "german federal states",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm test",
+    "build": "npm run build-ts && npm run lint",
+    "build-ts": "tsc",
+    "test": "mocha -r ts-node/register 'test/**/*.spec.ts'",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+  },
+  "keywords": [
+    "germany",
+    "federal states",
+    "capital cities"
+  ],
+  "author": "Enrico Lüdecke",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/eslint": "^7.2.13",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.28.0",
+    "mocha": "^9.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
